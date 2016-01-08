@@ -26,14 +26,8 @@ public void setup()
 }  
 public void draw()  
 {   
-	int i = 0;
-	while(i < e.length()-10)
-	{
-		String nums = e.substring(i, i+10);
-		double prime = Double.parseDouble(nums);
-		System.out.println(prime);
-		i+=10;
-	}
+	for (int j = 0; j < e.length(); j++)
+		isPrime();
 }  
 public boolean isPrime(double dNum)  
 {   
